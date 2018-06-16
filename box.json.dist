@@ -1,0 +1,16 @@
+{
+    "alias": "php-ext-usage.phar",
+    "output": "php-ext-usage.phar",
+    "main": "bin/php-ext-usage",
+    "chmod": "0755",
+    "files": [
+        "bin/php-ext-usage",
+        "LICENSE"
+    ],
+    "directories": [
+        "src",
+        "vendor"
+    ],
+    "git-tag": "git_version",
+    "stub": true
+}

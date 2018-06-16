@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+namespace Shira\PhpExtUsage;
+
+require __DIR__ . '/../src/bootstrap.php';
+
+exit ((function () {
+    $version = '@git_version@';
+
+    if ($version[0] === '@') {
+        $version = 'source';
+    }
+
+    $app = new Application('PHP extension usage', $version);
+    $app->setCatchExceptions(true);
+
+    return $app->run();
+})());

@@ -1,0 +1,4 @@
+/vendor/
+/composer.lock
+/box.phar
+/php-ext-usage.phar
